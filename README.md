@@ -1,16 +1,16 @@
-# veena-unnikrishnan-wasserstoff-AiInternTask
+**veena-unnikrishnan-wasserstoff-AiInternTask
 For AI Internship Task
-#Internship Task: Domain-Specific PDF Summarization & Keyword Extraction Pipeline
+Internship Task: Domain-Specific PDF Summarization & Keyword Extraction Pipeline**
 
-#Objective:
+**Objective**:
 
 Design and implement a dynamic pipeline that processes multiple PDF documents from a desktop folder, generates **domain-specific** summaries and keywords, and stores them in a **MongoDB database**. The system must efficiently handle documents of varying lengths, from short to long, and update the database with summary and keyword data after each document is processed.
 
 
 
-##Task Details**
+**Task Details**
 
-###1. PDF Ingestion & Parsing
+1. **PDF Ingestion & Parsing**
 
 - **Requirement**: The pipeline should be able to process multiple PDFs from a folder on the desktop. It must handle documents of **varying lengths**:
     - Short PDFs 
@@ -19,29 +19,29 @@ Design and implement a dynamic pipeline that processes multiple PDF documents fr
   
 - **Concurrency**: Ensure the system can process multiple documents in parallel, managing system resources efficiently. The pipeline must handle large files and high volumes without crashing.
 
-###2. MongoDB Dataset Storage & JSON Updates
+2. **MongoDB Dataset Storage & JSON Updates**
 
 - **Initial Storage**: When each PDF is ingested, its metadata (document name, path, size, etc.) must be stored in a MongoDB collection.
 - **Post-Processing Update**: After summarization and keyword extraction, the MongoDB entry for each document must be updated with the JSON output, including the generated summary and extracted keywords.
 
-###3. Summarization & Keyword Extraction
+3. **Summarization & Keyword Extraction**
 
 - **Summarization**: Dynamically generate summaries that are relevant to the domain you have chosen. The summary length and detail should correspond to the document length (e.g., a detailed summary for long documents, concise summaries for short ones).
 - **Keyword Extraction**: Extract **non-generic**, domain-specific keywords that reflect key ideas or themes of the document. Avoid common or irrelevant keywords.
 
-###4. JSON Structure & MongoDB Updates
+4. **JSON Structure & MongoDB Updates**
 
 - **JSON Format**: Summaries and keywords must be formatted in JSON, which will then be stored in the MongoDB document. Make sure to handle updates efficiently after processing each document.
 - **Error Handling**: Log any errors (e.g., for corrupted PDFs or unsupported formats) and ensure that MongoDB records are not affected by such issues.
 
-###5. Concurrency & Performance
+5. **Concurrency & Performance**
 
 - **Concurrency**: The pipeline should be designed to handle multiple documents simultaneously, leveraging parallel processing to improve speed.
 - **Performance**: Provide data on how well the system scales, especially in terms of how quickly it processes large and multiple PDFs concurrently.
 
 
 
-##Additional Requirements
+**Additional Requirements**
 
 
 - **Document Variety**: The pipeline must handle PDFs of varying lengths. Provide examples of short (1-2 pages), medium (10-12 pages), and long (30+ pages) documents in your testing.
@@ -51,7 +51,7 @@ Design and implement a dynamic pipeline that processes multiple PDF documents fr
 
 
 
-##Submission Guidelines
+**Submission Guidelines**
 
 
 - **Codebase**: Submit a well-commented and structured codebase.
@@ -62,7 +62,7 @@ Design and implement a dynamic pipeline that processes multiple PDF documents fr
 
 
 
-###Important Notes
+**Important Notes**
 
 - **Pre-built Libraries**: Use of pre-built libraries (e.g., Langchain) is allowed but will result in a deduction of up to **15 marks**. Custom-built solutions will be rewarded more highly.
 - **Keyword Extraction**: Ensure keywords are **domain-specific** and relevant. Generic or overly broad keywords will result in a deduction.
