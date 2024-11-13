@@ -1,5 +1,4 @@
 **veena-unnikrishnan-wasserstoff-AiInternTask
-For AI Internship Task
 Internship Task: Domain-Specific PDF Summarization & Keyword Extraction Pipeline**
 
 **Objective**:
